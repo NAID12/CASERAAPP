@@ -13,5 +13,65 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="Your account for everything Casera."
+        android:textSize="18sp"
+        android:layout_marginTop="42dp"
+        android:typeface="serif"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/edtTextPassword"
+        android:hint="Password"
+        android:layout_above="@+id/btnLogin"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="21dp"
+        android:layout_alignParentEnd="true"/>
+
+    <CheckBox
+        android:text="CheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        android:text="Cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCancel"
+        android:textSize="18sp"
+        android:lineSpacingExtra="8sp"
+        android:layout_marginBottom="16dp"
+        android:layout_above="@+id/checkBox"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        android:text="Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="41dp"
+        android:id="@+id/btnLogin"
+        android:onClick="btnLoginOnClick "
+        android:layout_above="@+id/btnCancel"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/LoginName"
+        android:hint="Username"
+        android:layout_alignBottom="@+id/edtTextPassword"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="61dp"
+        android:layout_alignParentEnd="true"/>
 </RelativeLayout>
